@@ -1,16 +1,14 @@
-import java.io.File;
 import java.util.Scanner;
 
 public class MainMenu {
+	
 	public static void main(String[] args) {
 		PrimaryDetails();
-		PrimaryMenu menu = new PrimaryMenu();
-		menu.createDir();
+		PrimaryMenu.createDir();
         PrimaryScreen();
 		
 	}
-	 
-
+	
 	//To display the opening screen
 	public static void PrimaryDetails() {
 		System.out.println("************Welcome to Locked.Me Application***********");
@@ -48,7 +46,7 @@ public class MainMenu {
 				PrimaryScreen();
 			}
 		}catch(Exception ex) {
-			System.out.println(ex);
+			System.out.println("Please enter correct option from 1 to 3;");
 			
 		}PrimaryScreen();
 		

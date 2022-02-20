@@ -12,6 +12,7 @@ public class SecondaryMenu {
 	 */
 	File foldername = PrimaryMenu.foldername;
 	
+	//Operation 1: To add a file to the user specified directory
 	void addFiles() {
 		try {
 			System.out.println("******************************************************");
@@ -35,8 +36,8 @@ public class SecondaryMenu {
 		}
     }
 	
-	//To delete the file entered by the user
-	public void deleteFile() {
+	//Operation 2: To delete the file entered by the user
+	void deleteFile() {
 		System.out.println("******************************************************");
 		System.out.println("Please enter the file name that needs to be deleted from the list : ");
 		Scanner scan = new Scanner(System.in);
@@ -53,7 +54,7 @@ public class SecondaryMenu {
 	}		
 		
 	
-
+    //Operation 3 : To search for a specific file within the folder
 	void searchFile()  {
 		
 		Scanner scan= new Scanner(System.in);

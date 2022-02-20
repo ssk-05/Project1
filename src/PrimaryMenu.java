@@ -13,6 +13,7 @@ public class PrimaryMenu {
 	static File foldername;
 	static String DIR;
 	
+	//Asking user to enter a folder name
 	public static void createDir() {
 	        DIR = System.getProperty("user.dir");
 	        System.out.println("******************************************************");
@@ -35,7 +36,7 @@ public class PrimaryMenu {
 		  
 	     }
 		  
-	    
+	   //To list all the files in the folder
 	   public static void listAllFiles() {
 		    try {
 		    	if(foldername.list().length==0) {
@@ -58,15 +59,4 @@ public class PrimaryMenu {
 		    
 	    	
 	     }
-	
-	 
-
-
-		
-	
-	
-	    
-	
-	
-	
 }
